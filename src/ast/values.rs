@@ -613,6 +613,7 @@ value!(val: i64, Integer, val);
 value!(val: bool, Boolean, val);
 value!(val: &'a str, Text, val.into());
 value!(val: String, Text, val.into());
+value!(val: &'a String, Text, val.into());
 value!(val: usize, Integer, i64::try_from(val).unwrap());
 value!(val: i32, Integer, i64::try_from(val).unwrap());
 value!(val: &'a [u8], Bytes, val.into());
